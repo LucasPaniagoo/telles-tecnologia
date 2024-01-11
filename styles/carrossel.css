@@ -1,14 +1,10 @@
 :root{
-    --swiper-navigation-size: 44px;
+    --swiper-navigation-size: 40px;
     --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset: 30px;
+    --swiper-navigation-sides-offset: 30px;  
     --swiper-navigation-color: var(--cor-azul);
     --swiper-pagination-color: var(--cor-azul);
 }
 .swiper__img{
     width: 100%;
-}
-.swiper {
-  width: 100vw;
-  height: 100%;
 }
