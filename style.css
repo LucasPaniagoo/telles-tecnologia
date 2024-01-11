@@ -1,0 +1,27 @@
+@import url('styles/reset.css');
+@import url('styles/header.css');
+@import url('styles/carrossel.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,400;1,600&display=swap');
+
+:root{
+    /* Paleta de Cores */
+    --cor-azul: #151F30;
+    --cor-vermelha: #C52D30;
+    --cor-branca: #FFFFFF;
+    --cor-preta: #000000;
+    --cor-do-nav: #FCFCFC;
+    --cor-cinza: #F7F7F7;
+    --cor-box: #FBFBFB;
+
+    /* Fontes */
+    --fonte-poppins: 'Poppins', sans-serif;
+    --fonte-mont: 'Montserrat', sans-serif;
+
+}
+
+body{
+    font-family: var(--fonte-mont);
+    font-size: 16px;
+    font-weight: 400;
+}
