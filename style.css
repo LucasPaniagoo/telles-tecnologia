@@ -2,8 +2,14 @@
 @import url('styles/header.css');
 @import url('styles/carrossel.css');
 @import url('styles/solucoes.css');
+@import url('styles/tarja.css');
+@import url('styles/cabecalhos-topico.css');
+@import url('styles/localizacao.css');
+@import url('styles/footer.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 
 :root{
     /* Paleta de Cores */
@@ -14,7 +20,7 @@
     --cor-preta: #000000;
     --cor-do-nav: #FCFCFC;
     --cor-cinza: #F7F7F7;
-    --cor-box: #FBFBFB;
+    --cor-box: #f7f7f7;
 
     /* Fontes */
     --fonte-poppins: 'Poppins', sans-serif;

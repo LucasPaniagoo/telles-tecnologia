@@ -1,0 +1,20 @@
+.localizacao__topico{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 5em;
+    align-items: center;
+    justify-content: center;
+    margin: 6em 10em;
+}
+.localizacao__topico__texto{
+    width: 20vw;
+    background-color: var(--cor-box);
+    padding: 5em;
+    font-size: 24px;
+    align-items: center;
+    text-align: left;
+}
+.localizacao__topico__texto >p{
+    margin-bottom: 1em;
+    color: var(--cor-azul);
+}

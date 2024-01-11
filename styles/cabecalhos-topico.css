@@ -1,0 +1,11 @@
+.solucoes__header, 
+.localizacao__header{
+    background-color: var(--cor-cinza);
+    padding: 1.2em;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-mont);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-azul);
+}

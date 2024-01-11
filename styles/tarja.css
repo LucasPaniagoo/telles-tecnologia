@@ -1,0 +1,22 @@
+.tarja{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    padding: 5em 15em;
+    font-family: var(--fonte-mont);
+    align-items: center;
+
+}
+.tarja__principal{
+    width: 50vw;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+.tarja__texto{
+    width: 50vw;
+    font-size: 25px;
+    text-align: justify;
+}
