@@ -8,11 +8,11 @@
 .solucoes__box__servicos{
     width: 25vh;
     background-color: var(--cor-box);
-    padding: 1em 2em 3em 2em;
+    padding: 1em;
     border-radius: 10px;
 }
 .solucoes__box__servicos > img{
-    width: 10vw;
+    width: 12vw;
 }
 .solucoes__box__servicos > p{
     color: var(--cor-azul-claro);
