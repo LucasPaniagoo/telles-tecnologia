@@ -6,15 +6,26 @@
     margin: 6em 10em;
 }
 .solucoes__box__servicos{
+    display: flex;
+    align-items: center;
+    text-align: center;
     width: 25vh;
     background-color: var(--cor-box);
-    padding: 1em;
+    padding: 2em;
     border-radius: 10px;
 }
 .solucoes__box__servicos > img{
     width: 12vw;
 }
-.solucoes__box__servicos > p{
-    color: var(--cor-azul-claro);
-    padding: 0 1em;
+.solucoes__box__servicos__texto{
+
+    color: var(--cor-branca);
+    padding: 1em;
+    margin: 0 auto
+}
+.solucoes-hover{
+    background-color: var(--cor-azul);
+}
+.esconder{
+    display: none;
 }
