@@ -27,3 +27,13 @@
 .localizacao__topico__mapa{
     width: 50%;
 }
+
+@media screen and (max-width: 1024px){
+    .localizacao__topico{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .localizacao__topico__texto{
+        display: none;
+    }
+}

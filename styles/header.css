@@ -17,7 +17,6 @@
     justify-content: space-between;
 }
 .cabecalho__nav__img{
-    
     margin-left: 3em;
 }
 .cabecalho__nav__links{
@@ -33,4 +32,18 @@
 .cabecalho__nav__links > a:hover{
     background-color: var(--cor-vermelha);
     color: var(--cor-branca);
+}
+
+@media screen and (max-width: 1024px){
+    .cabecalho__faixa{
+        padding: 0.5em;
+        font-size: 14px;
+    }
+    .cabecalho__nav__img{
+        width: 60%;
+    }
+    .cabecalho__nav__links{
+        gap: 0.2em;
+        font-size: 14px;
+    }
 }

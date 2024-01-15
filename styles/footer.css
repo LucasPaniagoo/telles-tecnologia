@@ -56,3 +56,15 @@ hr{
 .rodape__autor-autor{
     margin-top: 0.5em;
 }
+
+@media screen and (max-width: 1024px){
+    .lista-rodape__titulo{
+        font-size: 16px;
+    }
+    .lista-rodape__item{
+        font-size: 14px;
+    }
+    .rodape__autor{
+        font-size: 12px;
+    }
+}

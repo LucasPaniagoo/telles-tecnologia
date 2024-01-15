@@ -9,3 +9,11 @@
     font-size: 20px;
     color: var(--cor-azul);
 }
+
+@media screen and (max-width: 1024px){
+    .solucoes__header, 
+    .localizacao__header{
+        padding: 0.8em;
+        font-size: 16px;
+    }
+}
