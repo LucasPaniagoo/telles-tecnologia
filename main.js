@@ -22,41 +22,72 @@
       },
     
   });
-
   const span01 = document.getElementById('span_solucao01');
   const span02 = document.getElementById('span_solucao02');
   const span03 = document.getElementById('span_solucao03');
   const span04 = document.getElementById('span_solucao04');
-  const imagem = document.getElementById('imagem01')
+  const paragrafo = document.createElement('p');
+  paragrafo.id = 'textoSelecionado';
 
-  span01.addEventListener('mouseover', () =>
+  const texto = 
   {
-    esconderLogo(span01)
-  })
-  span01.addEventListener('mouseout', () =>
+  span_solucao01: 'Terceirização de TI',
+  span_solucao02: 'Suporte Remoto',
+  span_solucao03: 'Gerenciamento de Servidores',
+  span_solucao04: 'Montagem e Manutenção de Computadores'
+  }
+
+  span01.addEventListener('mouseenter', () =>
   {
-    voltarLogo(span01)
+    esconderLogo(span01);
   })
+  span01.addEventListener('mouseleave', () =>
+  {
+    voltarLogo(span01);
+  })
+
+  span02.addEventListener('mouseenter', () => 
+  {
+    esconderLogo(span02);
+  })
+  span02.addEventListener('mouseleave', () => 
+  {
+    voltarLogo(span02);
+  })
+  
+  span03.addEventListener('mouseenter', () => 
+  {
+    esconderLogo(span03);
+  })
+  span03.addEventListener('mouseleave', () => 
+  {
+    voltarLogo(span03);
+  })
+
+  span04.addEventListener('mouseenter', () => 
+  {
+    esconderLogo(span04);
+  })
+  span04.addEventListener('mouseleave', () => 
+  {
+    voltarLogo(span04)
+  })
+
+
 
   function esconderLogo(nomeCampo) 
   {
-    nomeCampo.classList.add('solucoes-hover')
-    // nomeCampo.childNodes[1].classList.add('esconder');
-    imagem.classList.add('esconder');
-    const p = document.createElement('p');
-    p.id = 'textonovo'
-    p.innerText = 'Acesso Remoto';
-    p.classList.add('solucoes__box__servicos__texto')
-    nomeCampo.append(p);
+  nomeCampo.classList.add('solucoes-hover')
+  nomeCampo.childNodes[1].classList.add('esconder');
+  paragrafo.innerText = texto[nomeCampo.id];
+  paragrafo.classList.add('solucoes__box__servicos__texto');
+  nomeCampo.append(paragrafo);
   }
 
   function voltarLogo(nomeCampo)
   {
-    nomeCampo.classList.remove('solucoes-hover')
-    nomeCampo.childNodes[1].classList.remove('esconder')
-    const ptexto = document.getElementById('textonovo').remove()
-    
-  }
-  function esconde() {
-    imagem.classList.add('esconder')
+  nomeCampo.classList.remove('solucoes-hover');
+  nomeCampo.childNodes[1].classList.remove('esconder');
+
+  paragrafo.remove()
   }

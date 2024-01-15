@@ -1,20 +1,29 @@
 .localizacao__topico{
     display: grid;
     grid-template-columns: repeat(2, auto);
-    column-gap: 5em;
-    align-items: center;
+    column-gap: 6em;
+    text-align: center;
     justify-content: center;
+    align-items: center;
     margin: 6em 10em;
 }
 .localizacao__topico__texto{
-    width: 20vw;
-    background-color: var(--cor-box);
-    padding: 5em;
-    font-size: 24px;
-    align-items: center;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
+    background-color: var(--cor-box);
+    padding: 3em;
+    font-size: 20px;
+
 }
 .localizacao__topico__texto >p{
     margin-bottom: 1em;
     color: var(--cor-azul);
+    line-height: 1.3em;
+}
+.localizacao__topico__mapa{
+    width: 50%;
 }
