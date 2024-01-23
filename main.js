@@ -22,12 +22,18 @@
       },
     
   });
-  const span01 = document.getElementById('span_solucao01');
-  const span02 = document.getElementById('span_solucao02');
-  const span03 = document.getElementById('span_solucao03');
-  const span04 = document.getElementById('span_solucao04');
+  const boxSolucoes = document.querySelectorAll('.solucoes__box__servicos')
   const paragrafo = document.createElement('p');
   paragrafo.id = 'textoSelecionado';
+
+  boxSolucoes.forEach(span => span.addEventListener('mouseenter', () => 
+  {
+    esconderLogo(span);
+  }));
+  boxSolucoes.forEach(span => span.addEventListener('mouseleave', () =>
+  {
+    voltarLogo(span);
+  }));
 
   const texto = 
   {
@@ -36,44 +42,6 @@
   span_solucao03: 'Gerenciamento de Servidores',
   span_solucao04: 'Montagem e Manutenção de Computadores'
   }
-
-  span01.addEventListener('mouseenter', () =>
-  {
-    esconderLogo(span01);
-  })
-  span01.addEventListener('mouseleave', () =>
-  {
-    voltarLogo(span01);
-  })
-
-  span02.addEventListener('mouseenter', () => 
-  {
-    esconderLogo(span02);
-  })
-  span02.addEventListener('mouseleave', () => 
-  {
-    voltarLogo(span02);
-  })
-  
-  span03.addEventListener('mouseenter', () => 
-  {
-    esconderLogo(span03);
-  })
-  span03.addEventListener('mouseleave', () => 
-  {
-    voltarLogo(span03);
-  })
-
-  span04.addEventListener('mouseenter', () => 
-  {
-    esconderLogo(span04);
-  })
-  span04.addEventListener('mouseleave', () => 
-  {
-    voltarLogo(span04)
-  })
-
-
 
   function esconderLogo(nomeCampo) 
   {
@@ -88,6 +56,5 @@
   {
   nomeCampo.classList.remove('solucoes-hover');
   nomeCampo.childNodes[1].classList.remove('esconder');
-
   paragrafo.remove()
   }
