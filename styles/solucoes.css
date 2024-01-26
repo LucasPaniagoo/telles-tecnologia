@@ -69,3 +69,21 @@
         transition: 1s;
     }
 }
+
+@media screen and (max-width: 428px){
+    .solucoes__box{
+        display: block;
+        margin: 1em 0;
+    }
+    .solucoes__box__servicos{
+        width: 25vh;
+        margin-top: 1em;
+    }
+    .solucoes__box__servicos > img{
+        width: 50vw;
+    }
+    .solucoes__box__servicos__texto{
+        padding: 6em;
+        width: 30vh;
+    }
+}

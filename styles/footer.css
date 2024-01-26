@@ -68,3 +68,33 @@ hr{
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 834px)
+{
+    .rodape__logo{
+        display: none;
+    }
+    .lista-rodape-semhr{
+        border-left: 0;
+    }
+    .rodape{
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+    .lista-rodape__titulo{
+        font-size: 14px;
+    }
+    .lista-rodape__item{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .lista-rodape{
+        display: none;
+    }
+    .rodape__logo{
+        display: block;
+    }
+}

@@ -56,3 +56,19 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 428px){
+    .tarja{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 4em 11em;
+    }
+    .tarja__texto{
+        display: none;
+    }
+    .tarja__principal > strong{
+
+        font-size: 16px;
+    }
+}

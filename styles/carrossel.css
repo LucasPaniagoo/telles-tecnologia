@@ -6,5 +6,18 @@
     --swiper-pagination-color: var(--cor-azul);
 }
 .swiper__img{
+    position: relative;
     width: 100%;
+}
+.swiper__banner{
+    position: relative;
+}
+.swiper-wrapper{
+    position: relative;
+}
+.swiper-slide{
+    position: relative;
+}
+.carrossel{
+    position: relative;
 }

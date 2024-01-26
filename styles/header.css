@@ -17,6 +17,8 @@
     justify-content: space-between;
 }
 .cabecalho__nav__img{
+    display: flex;
+    justify-content: center;
     margin-left: 3em;
 }
 .cabecalho__nav__links{
@@ -33,7 +35,21 @@
     background-color: var(--cor-vermelha);
     color: var(--cor-branca);
 }
-
+.container-botao{
+    display: none;
+}
+.container__rotulo{
+    display: none;
+}
+.cabecalho__menu-hamburguer{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+.lista-menu{
+    display: none;
+}
 @media screen and (max-width: 1024px){
     .cabecalho__faixa{
         padding: 0.5em;
@@ -46,4 +62,71 @@
         gap: 0.2em;
         font-size: 14px;
     }
+}
+@media screen and (max-width: 834px) {
+    .cabecalho-hidden{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .cabecalho{
+        position: relative;
+    }
+    .container-botao:checked ~ .container-rotulo > .cabecalho__menu-hamburguer{
+        background-image: url("../assets/img/icons/menu-branco.svg");
+    }
+    .container-rotulo{
+        padding: 1em;
+    }
+    .container-botao:checked~.container-rotulo{
+        background-color: var(--cor-vermelha);
+    }
+    .container-botao:checked~.lista-menu{
+        display: block;
+    }
+    .cabecalho__menu-hamburguer{
+        width: 36px;
+        height: 36px;
+        background-image: url("../assets/img/icons/menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .lista-menu{
+        position: static;
+        top: 100%;
+        width: 100vw;
+        background-color: var(--cor-vermelha);
+    }
+    .lista-menu__item{
+        padding: 1em;
+        background-color: var(--branco);
+    }
+    .lista-menu__item > a{
+        color: var(--cor-branca);
+        text-decoration: none;
+    }
+    .cabecalho__faixa{
+        font-size: 14px;
+    }
+    .menu__hamburguer{
+        display: flex;
+        justify-content: center;
+    }
+    .cabecalho__nav{
+        padding: 0.1em;
+    }
+    .cabecalho__nav__links{
+        display: none;
+    }
+    .cabecalho__nav__img{
+        display: none;
+    }
+    .imagem-mobile{
+        display: block;
+        width: 30%;
+        margin-right: 0.5em;
+    }
+
 }

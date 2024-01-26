@@ -37,3 +37,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 428px){
+    iframe{
+        width: 40vh;
+        height: 40vh;
+    }
+}

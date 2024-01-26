@@ -12,10 +12,31 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho__faixa">
-            <p>Terceirize sua TI conosco e concentre-se no sucesso do seu negócio | </p> <img src="assets/img/icons/WhatsApp.svg" alt="ícone do whatsApp"> <p>(66) 9 9209-2393 </p> <img src="assets/img/icons/Phone.svg" alt="ícone de um telefone"> <p>(66) 3302-8754</p> 
+            <p class="cabecalho-hidden">Terceirize sua TI conosco e concentre-se no sucesso do seu negócio | </p> <img src="assets/img/icons/WhatsApp.svg" alt="ícone do whatsApp"> <p>(66) 9 9209-2393 </p> <img src="assets/img/icons/Phone.svg" alt="ícone de um telefone"> <p>(66) 3302-8754</p> 
         </div>
         <nav class="cabecalho__nav">
-            <a href="#"><img src="./assets/img/logos/logoTELLES.png" alt="Logo da Telles Tecnologia" class="cabecalho__nav__img"></a>
+            <div class="menu__hamburguer">
+                <input type="checkbox" id="menu" class="container-botao">
+                <label for="menu"class="container-rotulo"><span class="cabecalho__menu-hamburguer container__imagem"></span></label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Soluções</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Suporte</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Contatos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Sobre</a>
+                    </li>
+                </ul>
+                <a href="index.html"><img src="./assets/img/logos/logoTELLES.png" alt="Logo da Telles Tecnologia" class="cabecalho__nav__img"></a>
+            </div>
             <div class="cabecalho__nav__links">
                 <a href="#">Home</a>
                 <a href="#">Soluções</a>
@@ -23,6 +44,7 @@
                 <a href="#">Contatos</a>
                 <a href="#">Sobre</a>
             </div>
+            <img src="assets/img/logos/logoTELLES.png" alt="Loogo da Telles" class="imagem-mobile" hidden>
         </nav>
     </header>
     <main>
@@ -91,7 +113,7 @@
                 <div class="rodape__logo">
                     <img src="assets/img/logos/logoTelles-branca.png" alt="Logo Branca da Telles Tecnologia">
                 </div>
-                <ul class="lista-rodape">
+                <ul class="lista-rodape lista-rodape-semhr">
                     <li class="lista-rodape__titulo">Contatos</li>
                     <li class="lista-rodape__item"><strong>E-mail:</strong> <p class="rodape-texto">info@tellestecnologia.com.br</p></li>
                     <li class="lista-rodape__item"><strong>WhatsApp:</strong> <p class="rodape-texto">(66) 9 9209-2393</p></li>
