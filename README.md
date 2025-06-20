@@ -23,8 +23,9 @@ A ideia surgiu após analisar o site original da empresa, que apresenta alguns p
 - Exercitar o olhar crítico para **UX/UI** e boas práticas de desenvolvimento front-end.
 
 ## 📸 Demonstração
+![gifTelles](https://github.com/user-attachments/assets/f73270fa-9375-4c0b-be35-8fcb84399736)
 
-*Adicione aqui imagens ou GIFs do site em funcionamento, se desejar.*
+
 
 ## ✍️ Considerações Finais
 
